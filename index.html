@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Figtree:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400&display=swap" rel="stylesheet">
 <style>
-:root{--fondo:#040a1c;--neon:#2BFF88;--cian:#19E3FF;--oro:#F2CF6B;--claude:#D97757;--linea:rgba(255,255,255,.12);--suave:rgba(255,255,255,.76);--max:1140px}
+:root{--fondo:#050822;--neon:#3FD4FF;--cian:#5CFFA6;--oro:#F2CF6B;--claude:#D97757;--linea:rgba(255,255,255,.12);--suave:rgba(255,255,255,.76);--max:1140px}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--fondo);color:#fff;font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -20,8 +20,8 @@ img,canvas,svg{display:block;max-width:100%}
 .mono{font-family:"DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;font-size:12.5px}
 .oro{background:linear-gradient(180deg,#FFF3C4 0%,#F2CF6B 30%,#C8962E 58%,#F7DC86 78%,#A9781F 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .ia{color:#7FF3FF;-webkit-text-fill-color:#7FF3FF;text-shadow:0 0 18px rgba(64,224,255,.9),0 0 46px rgba(64,224,255,.5)}
-.neon{color:var(--neon);text-shadow:0 0 18px rgba(43,255,136,.5)}
-.cian{color:var(--cian);text-shadow:0 0 18px rgba(25,227,255,.55)}
+.neon{color:var(--neon);text-shadow:0 0 18px rgba(63,212,255,.5)}
+.cian{color:var(--cian);text-shadow:0 0 18px rgba(92,255,166,.5)}
 .t1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:1.04;letter-spacing:.01em}
 .envoltura{max-width:var(--max);margin:0 auto;padding:0 24px}
 section.envoltura{padding:76px 24px 0}
@@ -31,15 +31,15 @@ section.envoltura{padding:76px 24px 0}
 #viaje{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:5;mix-blend-mode:screen}
 .hero,section,.datos,.final,footer{position:relative;z-index:1}
 
-.boton{position:relative;display:flex;justify-content:center;align-items:center;gap:10px;width:100%;border:0;border-radius:14px;padding:19px 18px;font-family:Figtree;font-weight:800;font-size:17px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;text-decoration:none;color:#03140b;background:linear-gradient(180deg,#5CFFA6,#12D66B);box-shadow:0 0 0 1px rgba(43,255,136,.6),0 10px 34px rgba(43,255,136,.35);animation:late 2.4s ease-in-out infinite;white-space:nowrap}
+.boton{position:relative;display:flex;justify-content:center;align-items:center;gap:10px;width:100%;border:0;border-radius:14px;padding:19px 18px;font-family:Figtree;font-weight:800;font-size:17px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;text-decoration:none;color:#03101f;background:linear-gradient(180deg,#9BEFFF,#2BB8FF);box-shadow:0 0 0 1px rgba(63,212,255,.6),0 10px 34px rgba(63,212,255,.35);animation:late 2.4s ease-in-out infinite;white-space:nowrap}
 .boton:after{content:"→";font-size:20px}
-@keyframes late{0%,100%{box-shadow:0 0 0 1px rgba(43,255,136,.6),0 10px 34px rgba(43,255,136,.3)}50%{box-shadow:0 0 0 1px rgba(43,255,136,.9),0 10px 48px rgba(43,255,136,.6)}}
+@keyframes late{0%,100%{box-shadow:0 0 0 1px rgba(63,212,255,.6),0 10px 34px rgba(63,212,255,.3)}50%{box-shadow:0 0 0 1px rgba(63,212,255,.9),0 10px 48px rgba(63,212,255,.6)}}
 .centro{max-width:460px;margin:30px auto 0}
 .billete{position:absolute;pointer-events:none;z-index:1;--py:0px;transform:translate(var(--mx,0px),calc(var(--py) + var(--my,0px))) perspective(900px) rotateY(calc(var(--ry,0deg) + var(--tilt,0deg))) rotateX(var(--rx,0deg)) rotate(var(--rot,0deg));filter:drop-shadow(0 22px 26px rgba(0,0,0,.55));transition:transform .35s cubic-bezier(.2,.7,.3,1);animation:flota 7s ease-in-out infinite}
 @keyframes flota{0%,100%{translate:0 0}50%{translate:0 -12px}}
 
 /* HERO */
-.hero{overflow:hidden;background:radial-gradient(55% 55% at 72% 42%,rgba(25,227,255,.2),rgba(4,10,28,0) 70%),radial-gradient(40% 40% at 66% 74%,rgba(43,255,136,.12),rgba(4,10,28,0) 70%),linear-gradient(180deg,#081633,#040a1c)}
+.hero{overflow:hidden;background:radial-gradient(55% 55% at 72% 42%,rgba(242,207,107,.16),rgba(5,8,34,0) 70%),radial-gradient(45% 45% at 64% 74%,rgba(63,212,255,.16),rgba(5,8,34,0) 70%),linear-gradient(180deg,#0b0f3a,#050822)}
 .hero .in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:40px 24px 0}
 .texto{padding-bottom:48px}
 .ed{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(127,243,255,.55);color:#7FF3FF;border-radius:999px;padding:7px 14px;margin-bottom:14px}
@@ -54,32 +54,32 @@ section.envoltura{padding:76px 24px 0}
 .precio .antes{text-align:right;color:var(--suave);font-size:15px}
 .precio .antes b{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:28px;color:#fff;letter-spacing:.02em}
 .cuenta{display:flex;gap:8px;margin:14px 0}
-.cuenta div{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(43,255,136,.35);border-radius:12px;padding:8px 4px;text-align:center}
+.cuenta div{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(63,212,255,.4);border-radius:12px;padding:8px 4px;text-align:center}
 .cuenta b{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:28px;line-height:1}
 .cuenta span{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--neon)}
 .trans{display:block;text-align:center;color:var(--suave);font-size:14px;margin-top:12px}
 .nota{display:block;text-align:center;color:rgba(255,255,255,.55);font-size:12.5px;margin-top:8px}
 .escena{position:relative;height:680px;overflow:hidden}
 .escena .simbolo{position:absolute;left:55%;top:46%;width:1000px;height:1000px;transform:translate(-50%,-50%) rotate(-18deg)}
-.escena .ella{position:absolute;z-index:2;bottom:0;left:50%;transform:translateX(-50%);height:94%;width:auto;max-width:96%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 0 30px rgba(25,227,255,.3)) drop-shadow(0 22px 40px rgba(0,0,0,.6))}
+.escena .ella{position:absolute;z-index:2;bottom:0;left:50%;transform:translateX(-50%);height:94%;width:auto;max-width:96%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 0 30px rgba(92,255,166,.3)) drop-shadow(0 22px 40px rgba(0,0,0,.6))}
 
 /* DATOS */
-.datos{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);background:#0a1633;border:1px solid rgba(25,227,255,.25);border-radius:18px;overflow:hidden;transform:translateY(-26px)}
+.datos{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);background:#0c1240;border:1px solid rgba(63,212,255,.3);border-radius:18px;overflow:hidden;transform:translateY(-26px)}
 .datos.ver{transform:translateY(-26px)}
 .dato{padding:16px 10px;text-align:center;border-left:1px solid var(--linea)}
 .dato:first-child{border-left:0}
-.dato svg{width:24px;height:24px;margin:0 auto 6px;stroke:var(--cian);fill:none;stroke-width:1.8;filter:drop-shadow(0 0 6px rgba(25,227,255,.6))}
+.dato svg{width:24px;height:24px;margin:0 auto 6px;stroke:var(--neon);fill:none;stroke-width:1.8;filter:drop-shadow(0 0 6px rgba(63,212,255,.6))}
 .dato b{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:17px;letter-spacing:.03em;text-transform:uppercase;line-height:1.15}
 .dato span{font-size:13px;color:var(--suave)}
 
 /* APRENDES: cerebro con burbujas */
 .mapa{position:relative;display:grid;grid-template-columns:1fr 260px 1fr;grid-template-rows:auto auto;gap:70px 70px;align-items:center;max-width:1060px;margin:0 auto}
 .lineas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
-.lineas path{fill:none;stroke:rgba(25,227,255,.75);stroke-width:1.4;filter:drop-shadow(0 0 6px rgba(25,227,255,.8));stroke-dasharray:6 6;animation:fluye 1.4s linear infinite}
+.lineas path{fill:none;stroke:rgba(92,255,166,.75);stroke-width:1.4;filter:drop-shadow(0 0 6px rgba(92,255,166,.8));stroke-dasharray:6 6;animation:fluye 1.4s linear infinite}
 @keyframes fluye{to{stroke-dashoffset:-12}}
 .mapa .cerebro{grid-column:2;grid-row:1 / span 2;position:relative;height:260px;z-index:1}
 .mapa .cerebro canvas{position:absolute;inset:0;width:100%;height:100%}
-.caja{position:relative;z-index:1;border:1px solid rgba(25,227,255,.45);border-radius:18px;padding:16px 18px;background:linear-gradient(160deg,rgba(25,227,255,.08),rgba(4,10,28,.5));box-shadow:0 0 30px rgba(25,227,255,.08)}
+.caja{position:relative;z-index:1;border:1px solid rgba(92,255,166,.45);border-radius:18px;padding:16px 18px;background:linear-gradient(160deg,rgba(92,255,166,.08),rgba(4,10,28,.5));box-shadow:0 0 30px rgba(92,255,166,.08)}
 .caja h3{font-size:18px;line-height:1.25;color:var(--cian);margin-bottom:4px}
 .caja p{color:var(--suave);font-size:15px}
 .caja .n{font-family:Anton,sans-serif;font-size:14px;letter-spacing:.14em;color:#fff;opacity:.6;margin-bottom:4px}
@@ -96,25 +96,27 @@ section.envoltura{padding:76px 24px 0}
 /* FECHAS */
 .fechas{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1000px;margin:0 auto}
 .fecha{border:1px solid var(--linea);border-radius:18px;padding:18px;background:rgba(255,255,255,.03);cursor:pointer;text-align:left;color:#fff;font:inherit;transition:border-color .2s,background .2s}
-.fecha .mono{color:#7FF3FF}
+.fecha .mono{color:var(--oro)}
 .fecha b{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:26px;letter-spacing:.02em;text-transform:uppercase;margin:6px 0 2px}
 .fecha span{color:var(--suave);font-size:14px}
-.fecha[aria-pressed=true]{border-color:var(--neon);background:rgba(43,255,136,.08);box-shadow:0 0 24px rgba(43,255,136,.15)}
+.fecha[aria-pressed=true]{border-color:var(--neon);background:rgba(63,212,255,.1);box-shadow:0 0 24px rgba(63,212,255,.2)}
 .fecha .lug{display:inline-block;margin-top:10px;font-family:"DM Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--neon)}
 
 /* TE ACOMPAÑA */
-.acompana{margin-top:76px;background:radial-gradient(55% 80% at 25% 55%,rgba(25,227,255,.16),rgba(4,10,28,0) 70%),linear-gradient(180deg,#0a1a3a,#040a1c);border-top:1px solid rgba(242,207,107,.35);overflow:hidden}
+.acompana{margin-top:76px;background:radial-gradient(55% 80% at 25% 55%,rgba(92,255,166,.16),rgba(4,10,28,0) 70%),linear-gradient(180deg,#0a1a3a,#040a1c);border-top:1px solid rgba(242,207,107,.35);overflow:hidden}
 .acompana .in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:0 24px}
 .acompana .foto{position:relative;height:500px;overflow:hidden;align-self:end}
 .acompana .foto canvas{position:absolute;left:50%;top:0;width:500px;height:420px;transform:translateX(-50%)}
-.acompana .ella2{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:96%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;z-index:2;filter:drop-shadow(0 0 26px rgba(25,227,255,.3)) drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+.acompana .ella2{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:96%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;z-index:2;filter:drop-shadow(0 0 26px rgba(92,255,166,.3)) drop-shadow(0 20px 40px rgba(0,0,0,.6))}
 .acompana .texto2{padding:44px 0}
 .acompana h2{font-size:clamp(42px,5vw,64px)}
 .acompana .arq{font-family:Fraunces,serif;font-style:italic;font-size:26px;margin-top:4px}
-.acompana .experta{display:inline-block;margin-top:14px;border:1px solid rgba(25,227,255,.5);background:rgba(25,227,255,.08);border-radius:12px;padding:10px 14px;font-weight:600}
+.acompana .experta{display:inline-block;margin-top:14px;border:1px solid rgba(92,255,166,.5);background:rgba(92,255,166,.08);border-radius:12px;padding:10px 14px;font-weight:600}
 .acompana .experta b{color:var(--cian)}
 .acompana p{color:var(--suave);margin-top:14px;max-width:560px}
 .acompana p b{color:#fff}
+.lema{font-family:Fraunces,serif;font-style:italic;font-size:21px;line-height:1.35;color:#fff!important;border-left:2px solid var(--neon);padding-left:14px}
+.lema b{font-family:Figtree;font-style:normal;color:var(--neon)!important}
 .ig{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:12px 18px;border:1px solid rgba(43,255,136,.5);border-radius:999px;color:#fff;text-decoration:none;font-weight:600}
 .ig svg{width:20px;height:20px;fill:none;stroke:var(--neon);stroke-width:1.8}
 
@@ -190,7 +192,7 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
 </header>
 
 <div class="datos rev">
-  <div class="dato"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Presencial</b><span>Puebla</span></div>
+  <div class="dato"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Haus Coffee Work</b><span>Col. Anzures, Puebla</span></div>
   <div class="dato"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><b id="d-fecha">Lunes 30</b><span id="d-mes">de noviembre</span></div>
   <div class="dato"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>10:00 am</b><span>hora de Puebla</span></div>
   <div class="dato"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1-4.5 4-4.5"/></svg><b>10 lugares</b><span>ni uno más</span></div>
@@ -203,9 +205,9 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
     <svg class="lineas" id="lineas" aria-hidden="true"></svg>
     <div class="caja izq r1 rev"><div class="n">01</div><h3>Cómo se relacionan tus emociones con el dinero</h3><p>Desde la conciencia: qué emoción está cobrando, recibiendo y gastando por ti.</p></div>
     <div class="cerebro rev"><canvas id="cerebro" width="760" height="760"></canvas></div>
-    <div class="caja der r1 rev"><div class="n">02</div><h3>A editar tus videos con IA</h3><p>Lo haces tú, ahí mismo, paso a paso. Sales con tu video listo para publicar.</p></div>
-    <div class="caja izq r2 rev"><div class="n">03</div><h3>Qué tareas le puedes dejar a la IA</h3><p>Para recuperar tiempo y usarlo en lo que sí importa: tu paz y tu negocio.</p></div>
-    <div class="caja der r2 rev"><div class="n">04</div><h3>Networking y coffee break</h3><p>Una mesa con otras personas que también están haciendo crecer su negocio.</p></div>
+    <div class="caja der r1 rev"><div class="n">02</div><h3>Cómo editar tu primer video con IA</h3><p>En tiempo real, ahí mismo. Sales con tu video listo.</p></div>
+    <div class="caja izq r2 rev"><div class="n">03</div><h3>Qué tareas le puedes dejar a la IA</h3><p>Revisamos qué tareas repites todos los días para ver cuáles le puedes delegar a la inteligencia artificial.</p></div>
+    <div class="caja der r2 rev"><div class="n">04</div><h3>Networking y café</h3><p>Convives con más emprendedores y empresarios, y te vuelves parte de una comunidad de expansión.</p></div>
   </div>
 </section>
 
@@ -221,8 +223,8 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
     </div>
     <div>
       <div class="mono" style="color:var(--claude)">La inteligencia artificial con la que trabajo</div>
-      <h3>Aprendes a usar <span>Claude</span></h3>
-      <p>La IA que uso todos los días para crear contenido, ordenar ideas y ahorrar horas de trabajo. Te enseño cómo usarla en tu negocio.</p>
+      <h3>Usamos <span>Claude</span></h3>
+      <p>Porque una mente millonaria es más eficiente con su tiempo. Hay tareas que ya es necesario delegar.</p>
     </div>
   </div>
 </section>
@@ -230,14 +232,14 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
 <section class="envoltura">
   <h2 class="t1 titulo rev">Elige tu <span class="neon">fecha</span></h2>
   <div class="fechas rev" id="fechas" role="group" aria-label="Fechas del taller"></div>
-  <p class="nota rev" style="margin-top:14px;font-size:14px">Una edición cada semana · 10 lugares por edición · la preventa de cada fecha cierra 5 días antes.</p>
+  <p class="nota rev" style="margin-top:14px;font-size:14px">Una edición cada semana · 10 lugares por edición · la preventa de cada fecha cierra 3 días antes.</p>
 </section>
 
 <section class="acompana">
   <div class="in">
     <div class="foto">
       <canvas id="cerebro2" width="900" height="760"></canvas>
-      <img class="ella2" src="assets/miriam-riendo.webp" alt="Miriam Peralta riendo" loading="lazy">
+      <img class="ella2" src="assets/miriam-lentes.webp" alt="Miriam Peralta sonriendo" loading="lazy">
     </div>
     <div class="texto2 rev">
       <div class="mono neon">Te acompaña</div>
@@ -245,7 +247,8 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
       <p class="arq">Arquitecta de Posibilidades Infinitas</p>
       <div class="experta">Experta en enseñarte a <b>cobrar más</b> con su metodología <b>RESET económico</b></div>
       <p>Invertí muchísimo en conocimiento: cursos, libros, mentores. Aprendía y aprendía… pero <b>no sabía empaquetar lo que sabía en un buen producto, ni cómo cobrarlo, porque no sabía desde dónde.</b></p>
-      <p>Hoy te comparto lo que a mí me cambió, y mis mejores tips de <b class="ia" style="text-shadow:none">inteligencia artificial</b> para <b>ahorrar muchísimo tiempo</b>.</p>
+      <p>Ahora optimizo mi tiempo para dar paso a lo importante: la construcción, las tareas del hogar, la conciencia, las mentorías… <b>apalancándome de la <span class="ia" style="text-shadow:none">inteligencia artificial</span> para que me dé tiempo para todo.</b></p>
+      <p class="lema">Tus 24 horas ya tienen un techo. <b>Nadie pasa de 24 horas, a menos que optimice su tiempo.</b></p>
       <a class="ig" href="https://instagram.com/soy_miriamperalta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@soy_miriamperalta</a>
     </div>
   </div>
@@ -255,8 +258,8 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
   <h2 class="t1 titulo rev">Preguntas</h2>
   <div class="faq rev">
     <details><summary>¿Necesito saber de inteligencia artificial?</summary><p>No. Lo hacemos juntos, paso a paso, desde cero.</p></details>
-    <details><summary>¿Qué llevo?</summary><p>Tu celular con batería: ahí editas tu video.</p></details>
-    <details><summary>¿Dónde es?</summary><p>En Puebla. La dirección exacta te llega en cuanto apartas tu lugar.</p></details>
+    <details><summary>¿Qué llevo?</summary><p>Tu celular y la computadora o laptop con la que trabajas. Si tienes equipo de trabajo, te sugiero apartarles lugar: así sabrán de qué manera pueden trabajar mejor en tu empresa.</p></details>
+    <details><summary>¿Dónde es?</summary><p>Haus Coffee Work · 12 A Sur 3932, Col. Anzures, Puebla, Pue.</p></details>
     <details><summary>¿Cómo aparto mi lugar?</summary><p>Con el botón "Apartar mi lugar" (tarjeta). Si prefieres transferencia, escríbeme por WhatsApp. El pago aparta tu lugar y no es reembolsable.</p></details>
     <details><summary>¿Y si ya no hay lugares?</summary><p>Elige la siguiente fecha: hay una edición cada semana.</p></details>
   </div>
@@ -274,7 +277,7 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
 <script>
 /* ═══ CONFIGURACIÓN ═══
    Cada semana, una edición. Para agregar fechas, se agrega una línea aquí.
-   La preventa cierra 5 días antes de cada edición (igual que la 01). */
+   La preventa cierra 3 días antes de cada edición. */
 const EDICIONES = [
   { n:'01', fecha:'2026-11-30T10:00:00-06:00', dia:'Lunes 30', mes:'de noviembre',
     preventa:'https://buy.stripe.com/bJe28rf2I3VR1b34lAbII03', normal:'https://buy.stripe.com/6oU14n07O0JFaLDf0ebII04' },
@@ -292,7 +295,7 @@ let actual = EDICIONES.find(e => new Date(e.fecha) > Date.now()) || EDICIONES[ED
 let timer;
 function elige(ed){
   actual = ed;
-  const inicio = new Date(ed.fecha).getTime(), finPre = inicio - 5*DIA, pre = Date.now() < finPre;
+  const inicio = new Date(ed.fecha).getTime(), finPre = inicio - 3*DIA, pre = Date.now() < finPre;
   document.querySelectorAll('.fecha').forEach(b => b.setAttribute('aria-pressed', b.dataset.n === ed.n));
   document.getElementById('ed-tag').textContent = `Edición ${ed.n} · Puebla`;
   document.getElementById('d-fecha').textContent = ed.dia; document.getElementById('d-mes').textContent = ed.mes;
@@ -338,9 +341,9 @@ function cerebroForma(W,H){ const cx = W/2, cy = H*0.48; const L = [[-.26,-.06,.
   return (px,py) => L.some(([ox,oy,rx,ry]) => (((px-(cx+ox*W))/(rx*W))**2 + ((py-(cy+oy*H))/(ry*H))**2) < 1); }
 (() => { const c = document.getElementById('simbolo'); const W = c.width, H = c.height; const o = document.createElement('canvas'); o.width = W; o.height = H; const ox = o.getContext('2d');
   ox.font = `700 ${H*0.9}px Georgia,"Times New Roman",serif`; ox.textAlign = 'center'; ox.textBaseline = 'middle'; ox.fillText('$', W/2, H*0.52);
-  const d = ox.getImageData(0,0,W,H).data; red(c, (px,py) => d[(Math.floor(py)*W + Math.floor(px))*4 + 3] > 128, {n:620, dist:46, color:'25,227,255', punto:'#B8F6FF', oro:.14, semilla:7}); })();
-(() => { const c = document.getElementById('cerebro'); red(c, cerebroForma(c.width,c.height), {n:560, dist:58, color:'25,227,255', punto:'#B8F6FF', oro:.08, semilla:5}); })();
-(() => { const c = document.getElementById('cerebro2'); red(c, cerebroForma(c.width,c.height), {n:480, dist:66, color:'25,227,255', punto:'#B8F6FF', oro:.15, semilla:11}); })();
+  const d = ox.getImageData(0,0,W,H).data; red(c, (px,py) => d[(Math.floor(py)*W + Math.floor(px))*4 + 3] > 128, {n:620, dist:46, color:'242,207,107', punto:'#FFE9A8', oro:.0, semilla:7}); })();
+(() => { const c = document.getElementById('cerebro'); red(c, cerebroForma(c.width,c.height), {n:560, dist:58, color:'92,255,166', punto:'#C8FFDF', oro:.08, semilla:5}); })();
+(() => { const c = document.getElementById('cerebro2'); red(c, cerebroForma(c.width,c.height), {n:480, dist:66, color:'63,212,255', punto:'#BDF2FF', oro:.15, semilla:11}); })();
 
 /* billete real curvado */
 (() => { const img = new Image(); img.crossOrigin = 'anonymous'; img.src = BILLETE;
@@ -369,7 +372,7 @@ function cerebroForma(W,H){ const cx = W/2, cy = H*0.48; const L = [[-.26,-.06,.
 /* $ y puntitos viajando por la página */
 (() => { const c = document.getElementById('viaje'), x = c.getContext('2d'); let W, H; const dpr = Math.min(devicePixelRatio||1, 2);
   const tam = () => { W = innerWidth; H = innerHeight; c.width = W*dpr; c.height = H*dpr; x.setTransform(dpr,0,0,dpr,0,0); }; tam(); addEventListener('resize', tam);
-  const N = innerWidth < 700 ? 26 : 46, P = []; for (let i=0;i<N;i++) P.push({x:Math.random(), y:Math.random()*3, v:.00004+Math.random()*.00012, z:.3+Math.random()*.9, s:Math.random()<.35, a:Math.random()*6.28, c:Math.random()<.5 ? '43,255,136' : '25,227,255'});
+  const N = innerWidth < 700 ? 26 : 46, P = []; for (let i=0;i<N;i++) P.push({x:Math.random(), y:Math.random()*3, v:.00004+Math.random()*.00012, z:.3+Math.random()*.9, s:Math.random()<.35, a:Math.random()*6.28, c:Math.random()<.5 ? '242,207,107' : '63,212,255'});
   let sy = scrollY; addEventListener('scroll', () => { sy = scrollY; }, {passive:true});
   const dibuja = (t) => { x.clearRect(0,0,W,H);
     for (const p of P){ const yy = ((p.y*H - sy*p.z*0.35 - t*p.v*H) % (H*1.2) + H*1.2) % (H*1.2) - H*0.1, xx = p.x*W + Math.sin(t/2400 + p.a)*18*p.z, al = 0.18 + 0.22*p.z;
