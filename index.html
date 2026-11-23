@@ -28,7 +28,7 @@ section.envoltura{padding:76px 24px 0}
 .titulo{font-size:clamp(34px,4.4vw,54px);text-align:center;margin-bottom:26px}
 .rev{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rev.ver{opacity:1;transform:none}
-#viaje{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:5;mix-blend-mode:screen}
+#viaje{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:0}
 .hero,section,.datos,.final,footer{position:relative;z-index:1}
 
 .boton{position:relative;display:flex;justify-content:center;align-items:center;gap:10px;width:100%;border:0;border-radius:14px;padding:19px 18px;font-family:Figtree;font-weight:800;font-size:17px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;text-decoration:none;color:#03101f;background:linear-gradient(180deg,#9BEFFF,#2BB8FF);box-shadow:0 0 0 1px rgba(63,212,255,.6),0 10px 34px rgba(63,212,255,.35);animation:late 2.4s ease-in-out infinite;white-space:nowrap}
@@ -39,8 +39,10 @@ section.envoltura{padding:76px 24px 0}
 @keyframes flota{0%,100%{translate:0 0}50%{translate:0 -12px}}
 
 /* HERO */
-.hero{overflow:hidden;background:radial-gradient(55% 55% at 72% 42%,rgba(242,207,107,.16),rgba(5,8,34,0) 70%),radial-gradient(45% 45% at 64% 74%,rgba(63,212,255,.16),rgba(5,8,34,0) 70%),linear-gradient(180deg,#0b0f3a,#050822)}
-.hero .in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:40px 24px 0}
+.hero{overflow:hidden;background:radial-gradient(55% 55% at 72% 42%,rgba(242,207,107,.16),rgba(5,8,34,0) 70%),radial-gradient(45% 45% at 64% 74%,rgba(63,212,255,.16),rgba(5,8,34,0) 70%),linear-gradient(180deg,rgba(11,15,58,.75),rgba(5,8,34,0))}
+.hero .in{max-width:760px;margin:0 auto;display:block;padding:56px 24px 30px;text-align:center}
+.hero .texto h2{margin-left:auto;margin-right:auto}
+.hero .precio{margin:0 auto;text-align:left}
 .texto{padding-bottom:48px}
 .ed{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(127,243,255,.55);color:#7FF3FF;border-radius:999px;padding:7px 14px;margin-bottom:14px}
 .ed i{width:8px;height:8px;border-radius:50%;background:#7FF3FF;box-shadow:0 0 10px #7FF3FF}
@@ -64,8 +66,7 @@ section.envoltura{padding:76px 24px 0}
 .escena .ella{position:absolute;z-index:2;bottom:0;left:50%;transform:translateX(-50%);height:94%;width:auto;max-width:96%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 0 30px rgba(92,255,166,.3)) drop-shadow(0 22px 40px rgba(0,0,0,.6))}
 
 /* DATOS */
-.datos{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);background:#0c1240;border:1px solid rgba(63,212,255,.3);border-radius:18px;overflow:hidden;transform:translateY(-26px)}
-.datos.ver{transform:translateY(-26px)}
+.datos{max-width:1000px;margin:10px auto 0;display:grid;grid-template-columns:repeat(5,1fr);background:#0c1240;border:1px solid rgba(63,212,255,.3);border-radius:18px;overflow:hidden}
 .dato{padding:16px 10px;text-align:center;border-left:1px solid var(--linea)}
 .dato:first-child{border-left:0}
 .dato svg{width:24px;height:24px;margin:0 auto 6px;stroke:var(--neon);fill:none;stroke-width:1.8;filter:drop-shadow(0 0 6px rgba(63,212,255,.6))}
@@ -103,7 +104,7 @@ section.envoltura{padding:76px 24px 0}
 .fecha .lug{display:inline-block;margin-top:10px;font-family:"DM Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--neon)}
 
 /* TE ACOMPAÑA */
-.acompana{margin-top:76px;background:radial-gradient(55% 80% at 25% 55%,rgba(92,255,166,.16),rgba(4,10,28,0) 70%),linear-gradient(180deg,#0a1a3a,#040a1c);border-top:1px solid rgba(242,207,107,.35);overflow:hidden}
+.acompana{margin-top:76px;background:radial-gradient(55% 80% at 25% 55%,rgba(92,255,166,.16),rgba(4,10,28,0) 70%),linear-gradient(180deg,rgba(10,26,58,.7),rgba(4,10,28,0));border-top:1px solid rgba(242,207,107,.35);overflow:hidden}
 .acompana .in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:0 24px}
 .acompana .foto{position:relative;height:500px;overflow:hidden;align-self:end}
 .acompana .foto canvas{position:absolute;left:50%;top:0;width:500px;height:420px;transform:translateX(-50%)}
@@ -120,6 +121,11 @@ section.envoltura{padding:76px 24px 0}
 .ig{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:12px 18px;border:1px solid rgba(43,255,136,.5);border-radius:999px;color:#fff;text-decoration:none;font-weight:600}
 .ig svg{width:20px;height:20px;fill:none;stroke:var(--neon);stroke-width:1.8}
 
+/* ASESORÍAS */
+.aseso{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid rgba(242,207,107,.45);border-radius:22px;padding:26px 28px;background:radial-gradient(70% 140% at 0% 50%,rgba(242,207,107,.12),rgba(5,8,34,0) 60%),#0c1240}
+.aseso h3{font-family:Anton,sans-serif;font-weight:400;font-size:32px;text-transform:uppercase;line-height:1.1;margin-top:4px}
+.aseso p{color:var(--suave);margin-top:6px;max-width:520px}
+@media (max-width:900px){.aseso{flex-direction:column;text-align:center}}
 /* PREGUNTAS */
 .faq{max-width:820px;margin:0 auto}
 .faq details{border-top:1px solid var(--linea);padding:16px 0}
@@ -135,7 +141,7 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
 .fija{display:none}
 
 @media (max-width:900px){
-  .hero .in{grid-template-columns:1fr;gap:0;padding:0}
+  .hero .in{padding:30px 0 10px}
   .escena{order:-1;height:480px}
   .escena .simbolo{width:640px;height:640px;top:44%;left:54%}
   .escena .ella{height:94%}
@@ -182,11 +188,6 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
         <a class="trans" id="ws" href="#" target="_blank" rel="noopener">¿Prefieres transferencia? Escríbeme por WhatsApp</a>
         <span class="nota">El pago aparta tu lugar y no es reembolsable.</span>
       </div>
-    </div>
-    <div class="escena" aria-hidden="true">
-      <canvas class="simbolo" id="simbolo" width="900" height="900"></canvas>
-      <canvas class="billete" data-billete data-par=".18" data-mouse="18" width="560" height="300" style="width:190px;left:0;top:4%;--ry:26deg;--rx:8deg;--rot:-14deg"></canvas>
-      <img class="ella" src="assets/miriam-roja-recorte.webp" alt="">
     </div>
   </div>
 </header>
@@ -251,6 +252,13 @@ footer{max-width:var(--max);margin:0 auto;padding:30px 24px 120px;color:rgba(255
       <p class="lema">Tus 24 horas ya tienen un techo. <b>Nadie pasa de 24 horas, a menos que optimice su tiempo.</b></p>
       <a class="ig" href="https://instagram.com/soy_miriamperalta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@soy_miriamperalta</a>
     </div>
+  </div>
+</section>
+
+<section class="envoltura">
+  <div class="aseso rev">
+    <div><div class="mono neon">¿Prefieres algo solo para ti?</div><h3>Pregunta por asesorías personalizadas</h3><p>Trabajamos 1 a 1 tu relación con el dinero, tu precio y cómo usar la IA en tu negocio.</p></div>
+    <a class="boton" id="aseso" href="#" target="_blank" rel="noopener" style="max-width:340px">Preguntar por WhatsApp</a>
   </div>
 </section>
 
@@ -325,6 +333,8 @@ function elige(ed){
   elige(actual);
 })();
 
+document.getElementById('aseso').href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent('Hola Miriam, quiero información de las asesorías personalizadas.');
+
 /* red de luz */
 function red(canvas, dentro, {n=520, dist=64, color='43,255,136', punto='#9DFFC9', oro=.12, semilla=11} = {}){
   const x = canvas.getContext('2d'), W = canvas.width, H = canvas.height; let s = semilla; const r = () => (s = (s*9301+49297)%233280)/233280;
@@ -340,9 +350,6 @@ function red(canvas, dentro, {n=520, dist=64, color='43,255,136', punto='#9DFFC9
 }
 function cerebroForma(W,H){ const cx = W/2, cy = H*0.48; const L = [[-.26,-.06,.30,.30],[.04,-.16,.34,.28],[.28,-.02,.26,.28],[-.10,.14,.34,.22],[.26,.24,.16,.12]];
   return (px,py) => L.some(([ox,oy,rx,ry]) => (((px-(cx+ox*W))/(rx*W))**2 + ((py-(cy+oy*H))/(ry*H))**2) < 1); }
-(() => { const c = document.getElementById('simbolo'); const W = c.width, H = c.height; const o = document.createElement('canvas'); o.width = W; o.height = H; const ox = o.getContext('2d');
-  ox.font = `700 ${H*0.9}px Georgia,"Times New Roman",serif`; ox.textAlign = 'center'; ox.textBaseline = 'middle'; ox.fillText('$', W/2, H*0.52);
-  const d = ox.getImageData(0,0,W,H).data; red(c, (px,py) => d[(Math.floor(py)*W + Math.floor(px))*4 + 3] > 128, {n:620, dist:46, color:'242,207,107', punto:'#FFE9A8', oro:.0, semilla:7}); })();
 (() => { const c = document.getElementById('cerebro'); red(c, cerebroForma(c.width,c.height), {n:560, dist:58, color:'92,255,166', punto:'#C8FFDF', oro:.08, semilla:5}); })();
 (() => { const c = document.getElementById('cerebro2'); red(c, cerebroForma(c.width,c.height), {n:480, dist:66, color:'63,212,255', punto:'#BDF2FF', oro:.15, semilla:11}); })();
 
@@ -373,10 +380,10 @@ function cerebroForma(W,H){ const cx = W/2, cy = H*0.48; const L = [[-.26,-.06,.
 /* $ y puntitos viajando por la página */
 (() => { const c = document.getElementById('viaje'), x = c.getContext('2d'); let W, H; const dpr = Math.min(devicePixelRatio||1, 2);
   const tam = () => { W = innerWidth; H = innerHeight; c.width = W*dpr; c.height = H*dpr; x.setTransform(dpr,0,0,dpr,0,0); }; tam(); addEventListener('resize', tam);
-  const N = innerWidth < 700 ? 26 : 46, P = []; for (let i=0;i<N;i++) P.push({x:Math.random(), y:Math.random()*3, v:.00004+Math.random()*.00012, z:.3+Math.random()*.9, s:Math.random()<.35, a:Math.random()*6.28, c:Math.random()<.5 ? '242,207,107' : '63,212,255'});
+  const N = innerWidth < 700 ? 12 : 22, P = []; for (let i=0;i<N;i++) P.push({x:Math.random(), y:Math.random()*3, v:.000012+Math.random()*.00002, z:.3+Math.random()*.9, s:true, a:Math.random()*6.28, c:Math.random()<.5 ? '242,207,107' : '63,212,255'});
   let sy = scrollY; addEventListener('scroll', () => { sy = scrollY; }, {passive:true});
   const dibuja = (t) => { x.clearRect(0,0,W,H);
-    for (const p of P){ const yy = ((p.y*H - sy*p.z*0.35 - t*p.v*H) % (H*1.2) + H*1.2) % (H*1.2) - H*0.1, xx = p.x*W + Math.sin(t/2400 + p.a)*18*p.z, al = 0.18 + 0.22*p.z;
+    for (const p of P){ const yy = ((p.y*H - sy*p.z*0.12 - t*p.v*H) % (H*1.2) + H*1.2) % (H*1.2) - H*0.1, xx = p.x*W + Math.sin(t/6000 + p.a)*10*p.z, al = 0.18 + 0.22*p.z;
       x.shadowBlur = 10; x.shadowColor = `rgba(${p.c},.9)`;
       if (p.s){ x.font = `700 ${12 + p.z*16}px Georgia,serif`; x.fillStyle = `rgba(${p.c},${al})`; x.fillText('$', xx, yy); } else { x.fillStyle = `rgba(${p.c},${al+.15})`; x.beginPath(); x.arc(xx, yy, 1 + p.z*1.6, 0, 7); x.fill(); } }
     if (!quieto) requestAnimationFrame(dibuja); };
